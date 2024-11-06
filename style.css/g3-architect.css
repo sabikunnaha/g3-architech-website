@@ -2,6 +2,72 @@
 
 * {
     font-family: "Work Sans", sans-serif;
-    font-optical-sizing: auto;
+
+}
+
+header {
+    background: rgba(255, 144, 14, 0.1);
+    padding: 50px 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-right: 30px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #424242;
     font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.nav-title {
+    color: #131313;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+.banner-container {
+    width: 862px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    color: #131313;
+}
+
+.banner-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+}
+
+.btn-primary {
+    background: #FF900E;
+    border: 0px;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 20px;
 }
