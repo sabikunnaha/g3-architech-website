@@ -8,7 +8,7 @@
 .text-common-color {
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     color: #727272;
 }
 
@@ -32,6 +32,7 @@ nav {
 
 nav>ul {
     display: flex;
+    gap: 20px;
     list-style: none;
 }
 
@@ -127,6 +128,50 @@ main {
     font-size: 45px;
 }
 
+/* feature style */
+.feature-container {
+    margin-top: 100px;
+    display: flex;
+    gap: 80px;
+}
+
+.feature-contant .section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 10px;
+}
+
+.feature-card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.ten-years-badge {
+    background-color: #FF900E;
+    border-radius: 8px;
+    color: #FFFFFF;
+    width: 280px;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+    bottom: 100px;
+}
+
+.ten-years-badge h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.feature-img img {
+    height: 90%;
+    width: 700px;
+    margin-left: 90px;
+}
+
 /* facts style */
 .facts-card-container {
     display: flex;
@@ -158,6 +203,37 @@ main {
     margin-bottom: 8px;
 }
 
+/* sponspors style */
+.sponspors {
+    text-align: center;
+}
+
+.sponspor-img-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.sponspor-img-container img {
+    width: 150px;
+    height: 50px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70rem;
+    background: #FFF4E7;
+    color: #727272;
+    border-radius: 8px;
+    margin-top: 20px;
+
+
+}
+
 /* Responsib website style*/
 /* For mobile device */
 
@@ -168,7 +244,10 @@ main {
 
     nav,
     ul,
-    .team-container {
+    .team-container,
+    .facts-card-container,
+    .sponspor-img-container,
+    .feature-container {
         flex-direction: column;
     }
 
@@ -184,13 +263,33 @@ main {
         width: 100%;
     }
 
+    .feature-img img {
+        width: 90%;
+        margin-left: 0%;
+    }
+
+    .ten-years-badge {
+        position: static;
+        max-width: 300px;
+    }
+
+    .facts-card-container {
+        gap: 15px;
+    }
+
+    .footer {
+        max-width: 100%;
+    }
+
 }
 
 /* For Mediam device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
 
     nav,
-    .team-container {
+    .team-container,
+    .feature-container,
+    .sponspor-img-container {
         flex-direction: column;
     }
 
@@ -210,5 +309,10 @@ main {
     .team-contant {
         width: 100%;
     }
+
+    .footer {
+        width: 100%;
+    }
+
 
 }
